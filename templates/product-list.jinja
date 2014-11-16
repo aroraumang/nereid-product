@@ -1,0 +1,5 @@
+<ul>
+{% for product in products %}
+    <li><a href="{{ url_for("product.product.render", active_id=product.id) }}">{{ product.rec_name }}</a></li>
+{% endfor %}
+</ul>
